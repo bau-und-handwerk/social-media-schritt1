@@ -963,7 +963,7 @@
     }
     .spickzettel-action strong { color: black !important; font-weight: 700 !important; }
   }
-  .community-cta { background: var(--bg-card); border-radius: 22px; padding: 60px 50px; margin-top: 60px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 50px; align-items: center; border: 1px solid var(--line); position: relative; overflow: hidden; }
+  .community-cta { background: var(--bg-card); border-radius: 22px; padding: 60px 50px; margin-top: 60px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 50px; align-items: start; border: 1px solid var(--line); position: relative; overflow: hidden; }
   .community-cta::before { content: ""; position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(245,197,24,0.15) 0%, transparent 70%); pointer-events: none; }
   @media (max-width: 800px) { .community-cta { grid-template-columns: 1fr; padding: 40px 28px; } }
   .community-cta .eyebrow-c { color: var(--ink-muted); font-weight: 700; font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 14px; display: block; }
@@ -972,6 +972,24 @@
   .community-cta ul { list-style: none; margin: 18px 0 0; }
   .community-cta ul li { color: var(--ink-soft); padding: 4px 0 4px 24px; font-size: 0.95rem; position: relative; }
   .community-cta ul li::before { content: "·"; color: var(--yellow); position: absolute; left: 8px; font-size: 1.4rem; font-weight: 800; top: -2px; }
+  .community-cta .cta-list { list-style: none; margin: 0; padding: 0; }
+  .community-cta .cta-list li {
+    color: var(--ink-soft);
+    padding: 8px 0 8px 28px;
+    font-size: 0.96rem;
+    line-height: 1.5;
+    position: relative;
+  }
+  .community-cta .cta-list li::before {
+    content: "→";
+    color: var(--yellow);
+    position: absolute;
+    left: 0;
+    top: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .community-cta .cta-list li strong { color: var(--ink); font-weight: 700; }
   .community-cta-right { position: relative; z-index: 2; text-align: center; }
   .community-cta-right .meta { margin-top: 14px; color: var(--ink-muted); font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; }
 
@@ -1355,13 +1373,20 @@
   <div class="wrap">
     <div class="community-cta">
       <div>
-        <span class="eyebrow-c">Wenn Du das wirklich umsetzen willst</span>
-        <h2>Hier setzen andere Betriebe das bereits um.</h2>
-        <p>Praxis-Anleitungen, echte Einblicke und Austausch mit Betrieben, die's wirklich umsetzen – dauerhaft kostenlos.</p>
+        <span class="eyebrow-c">Wenn Du's nicht nur lesen willst</span>
+        <h2>Das komplette System. <span style="color: var(--ink-soft); font-weight: 600; font-style: italic;">Mit echten Formulierungen.</span></h2>
+        <p style="margin-bottom: 14px;">In der Community findest Du:</p>
+        <ul class="cta-list">
+          <li><strong>Komplette schriftliche Vorlagen</strong> — die 3 Story-Formate zum direkten Kopieren und Anwenden</li>
+          <li><strong>Erklärvideos</strong> — Tobi zeigt Schritt für Schritt, wie er postet</li>
+          <li><strong>Die 10 Hebel mit Praxis-Beispielen</strong> — was genau Du für jeden Hebel tun musst</li>
+          <li><strong>Austausch mit Betrieben, die's schon umsetzen</strong> — aus echten Aufträgen</li>
+          <li><strong>Kostenlose Live-Calls</strong> — Deine Fragen direkt beantwortet</li>
+        </ul>
       </div>
       <div class="community-cta-right">
-        <a href="https://bau-handwerk-netzwerk.onepage.me/" class="btn" target="_blank" rel="noopener" style="text-decoration: none;">Zugang zur Community sichern →</a>
-        <p class="meta">Bereits 50+ Handwerksbetriebe drin</p>
+        <a href="https://bau-handwerk-netzwerk.onepage.me/" class="btn" target="_blank" rel="noopener" style="text-decoration: none;">Hol Dir die vollständige Strategie →</a>
+        <p class="meta">Bereits 50+ Handwerksbetriebe drin · kostenlos beitreten</p>
       </div>
     </div>
   </div>
